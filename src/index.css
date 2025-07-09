@@ -40,12 +40,15 @@ header {
   border-bottom: 1px solid #F5F5F5;
 }
 
-.entry-photo {
-  background-image: url("https://scrimba.com/links/travel-journal-japan-image-url");
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  border-radius: 5px;
+.entry-image-container {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.entry-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .entry-topbar {
