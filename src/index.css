@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     font-family: "Inter", sans-serif;
@@ -6,6 +10,7 @@ html, body {
 header {
   background-color: #F55A5A;
   height: 10vh;
+  width: 100vw;
   color: #fff;
   fill: #fff;
   display: flex;
@@ -22,4 +27,60 @@ header {
   letter-spacing: -7.5%;
   font-weight: 500;
   font-size: 1.5rem;
+}
+
+.entry-card {
+  max-width: 700px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  gap: 1.5em;
+  height: min-content;
+  padding: 3em 0;
+  border-bottom: 1px solid #F5F5F5;
+}
+
+.entry-photo {
+  background-image: url("https://scrimba.com/links/travel-journal-japan-image-url");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.entry-topbar {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.marker {
+  width: 1em;
+  fill: #F55A5A;
+}
+
+.entry-country {
+  color: #2B283A;
+  font-weight: 400;
+  letter-spacing: 17%;
+  text-transform: uppercase;
+}
+
+.entry-google {
+  color: #918E9B;
+  margin-left: 1em;
+}
+
+.entry-title {
+  font-size: 1.5rem;
+  color: #2B283A;
+  margin: 0.3rem 0;
+}
+
+.entry-dates,
+.entry-details {
+  font-size: 0.8rem;
+  color: #2B283A;
 }
